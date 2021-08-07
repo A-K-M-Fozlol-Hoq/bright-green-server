@@ -135,7 +135,7 @@ client.connect((err) => {
       const phone = req.body.phone;
       const serviceCode = req.body.serviceCode;
       const status = req.body.status;
-      orderCollection.insertOne({ name, email, address, country, phone, serviceCode, statuls })
+      orderCollection.insertOne({ name, email, address, country, phone, serviceCode, status })
           .then(result => {
             res.send(result);
           })
